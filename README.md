@@ -13,19 +13,19 @@ A edição tradicional de vídeos curtos apresenta dois gargalos críticos para 
 
 ## 💡 A Arquitetura da Solução (Fluxo do Agente)
 
-O sistema foi desenhado para processar o vídeo de forma autônoma com um loop de aprovação integrado, garantindo que o resultado ("Reel final") saia "igual toda vez"[cite: 4].
+O sistema foi desenhado para processar o vídeo de forma autônoma com um loop de aprovação integrado, garantindo que o resultado ("Reel final") saia "igual toda vez".
 
 <img width="1886" height="584" alt="image" src="https://github.com/user-attachments/assets/23294f40-51bb-46ce-83bd-077eb81efc97" />
 
 
-1. **Entrada e Triagem:** O sistema recebe o **Vídeo Bruto** (gravação do dia) e cruza com um banco de **Referências** (dados de estilo previamente aprendidos). O agente de **Triagem e Ficha** analisa o conteúdo falado ("o que o vídeo diz")[cite: 4].
-2. **Roteirização Automática:** O agente de **Batidas** transforma essa análise em um roteiro de edição estruturado[cite: 4].
-3. **Loop de Qualidade (Human/Agent-in-the-loop):** Uma etapa de decisão avalia se a **"Amostra está ok?"**[cite: 4]. Se reprovada, retorna para reajuste nas batidas. Se aprovada, aciona processos paralelos[cite: 4].
+1. **Entrada e Triagem:** O sistema recebe o **Vídeo Bruto** (gravação do dia) e cruza com um banco de **Referências** (dados de estilo previamente aprendidos). O agente de **Triagem e Ficha** analisa o conteúdo falado ("o que o vídeo diz").
+2. **Roteirização Automática:** O agente de **Batidas** transforma essa análise em um roteiro de edição estruturado.
+3. **Loop de Qualidade (Human/Agent-in-the-loop):** Uma etapa de decisão avalia se a **"Amostra está ok?"**. Se reprovada, retorna para reajuste nas batidas. Se aprovada, aciona processos paralelos.
 4. **Processamento Especializado (Serviços Paralelos):**
-   * **Corte e Legenda:** Aplicação hierárquica de textos no vídeo[cite: 4].
-   * **Cena por IA:** Geração de imagens suplementares quando o roteiro exige, mantendo a coerência visual do apresentador[cite: 4].
-   * **Lettering e Motion:** Aplicação de variações visuais controladas[cite: 4].
-5. **Renderização Determinística:** Os serviços convergem para o módulo de **Render**, construído com **Remotion** (renderização via código web), eliminando variáveis e entregando o arquivo final de forma programática e idêntica aos parâmetros aprovados[cite: 4].
+   * **Corte e Legenda:** Aplicação hierárquica de textos no vídeo.
+   * **Cena por IA:** Geração de imagens suplementares quando o roteiro exige, mantendo a coerência visual do apresentador.
+   * **Lettering e Motion:** Aplicação de variações visuais controladas.
+5. **Renderização Determinística:** Os serviços convergem para o módulo de **Render**, construído com **Remotion** (renderização via código web), eliminando variáveis e entregando o arquivo final de forma programática e idêntica aos parâmetros aprovados.
 
 ---
 
