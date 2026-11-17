@@ -1,4 +1,4 @@
-# 🎬 Estúdio de Reels: Orquestração e Edição Automatizada de Vídeos por IA
+#  Estúdio de Reels: Orquestração e Edição Automatizada de Vídeos por IA
 
 **Resumo Executivo:** Este repositório documenta a arquitetura de um pipeline de automação para edição de vídeos curtos (Reels). O sistema orquestra agentes de Inteligência Artificial para transformar vídeos brutos em material renderizado e finalizado, eliminando o trabalho braçal de edição manual e garantindo um padrão visual consistente em escala. 
 
@@ -6,12 +6,12 @@
 
 ---
 
-## 🚩 O Desafio Operacional
+##  O Desafio Operacional
 A edição tradicional de vídeos curtos apresenta dois gargalos críticos para criadores e empresas:
 1. **Tempo de Execução:** O processo de decupagem, cortes, legendagem e inserção de animações consome horas de trabalho manual por cada minuto de vídeo.
 2. **Inconsistência Visual:** O resultado final varia drasticamente dependendo do fluxo de trabalho humano, dificultando a manutenção de uma identidade de marca sólida.
 
-## 💡 A Arquitetura da Solução (Fluxo do Agente)
+##  A Arquitetura da Solução (Fluxo do Agente)
 
 O sistema foi desenhado para processar o vídeo de forma autônoma com um loop de aprovação integrado, garantindo que o resultado ("Reel final") saia "igual toda vez".
 
@@ -29,7 +29,7 @@ O sistema foi desenhado para processar o vídeo de forma autônoma com um loop d
 
 ---
 
-## 📈 Metodologia de Desenvolvimento e Métricas
+##  Metodologia de Desenvolvimento e Métricas
 O projeto foi construído utilizando **Claude Code** sob rigorosos padrões de engenharia de software (Test-Driven Development - TDD). O ciclo adotado foi: elaboração da especificação (*spec*) → quebra em tarefas pequenas com critérios de aceite → testes escritos (vermelho) → implementação (verde) → execução da suíte completa.
 
 * **Commit Log:** +270 commits documentados.
@@ -38,7 +38,7 @@ O projeto foi construído utilizando **Claude Code** sob rigorosos padrões de e
 
 ---
 
-## 🛡️ Princípios e Governança do Projeto
+##  Princípios e Governança do Projeto
 
 Para garantir a viabilidade comercial e a segurança da aplicação corporativa, o sistema opera sob três pilares:
 
